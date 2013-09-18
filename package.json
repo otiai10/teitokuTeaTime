@@ -22,7 +22,7 @@
     "url": "https://github.com/otiai10/teitokuTeaTime/issues"
   },
   "dependencies" : {
-    "typescript" : "0.9.1.1",
+    "typescript" : "0.9.1",
     "grunt-cli"  : "0.1.9",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-concat": "~0.2.0",
