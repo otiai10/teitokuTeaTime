@@ -1,0 +1,54 @@
+{
+    "manifest_version": 2,
+
+    "name": "提督秘書",
+    "version": "0.0.1",
+
+    "description": "あー、テステス...マイク音量大丈夫？",
+    "icons" : {
+        "48"  : "icon.48.png",
+        "128" : "icon.128.png"
+    },
+    "permissions" : [
+        "tabs",
+        "notifications",
+        "webRequest",
+        "unlimitedStorage",
+        "*://*/*"
+    ],
+    "background" : {
+        "persistent" : true,
+        "scripts" : [
+            "src/js/Util.js",
+            "src/js/Constants.js",
+            "src/js/definitions/models/MyStorage.js",
+            "src/js/definitions/models/achievements/Achievements.js",
+            "src/js/definitions/models/events/SoloEventBase.js",
+            "src/js/definitions/models/events/EventsBase.js",
+            "src/js/definitions/models/events/missions/Mission.js",
+            "src/js/definitions/models/events/missions/Missions.js",
+            "src/js/definitions/models/events/nyukyos/Nyukyo.js",
+            "src/js/definitions/models/events/nyukyos/Nyukyos.js",
+            "src/js/definitions/models/events/createships/Createship.js",
+            "src/js/definitions/models/events/createships/Createships.js",
+            "src/js/definitions/Dispatcher.js",
+            "src/js/definitions/Observer.js",
+            "src/js/definitions/actions/Map.js",
+            "src/js/definitions/actions/Nyukyo.js",
+            "src/js/definitions/actions/Kousyou.js",
+            "src/js/definitions/actions/Kaisou.js",
+            "src/js/definitions/actions/Hokyu.js",
+            "src/js/definitions/actions/Practice.js",
+            "src/js/definitions/actions/Mission.js",
+            "src/js/definitions/actions/Payment.js",
+            "src/js/definitions/actions/Action.js",
+            "src/js/background.js",
+            "src/js/pngencoder.min.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "src/html/select.html"
+    },
+    "options_page" : "src/html/more.html"
+}
